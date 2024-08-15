@@ -1,0 +1,26 @@
+
+.form-element {
+  position: relative;
+  margin: 1.5rem 0;
+}
+.form-range-value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--bs-gray-600);
+}
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 360px) {
+
+  .form-buttons {
+    flex-direction: column;
+  }
+  .form-buttons > BUTTON:not(:first-child) {
+      margin-top: 0.5rem;
+  }
+}
